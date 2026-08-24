@@ -1,14 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Header from "./component/Header";
+import GlobalStyle from "./style/GlobalStyle";
+import Router from "./router/Router";
+import Main from "./pages/Main";
+import Intro from "./pages/Intro";
+import Cart from "./pages/Cart";
+import { ProductsProvider } from "./context/ProductsContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <ProductsProvider>
+      <GlobalStyle />
+      <Router />
+    </ProductsProvider>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
