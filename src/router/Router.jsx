@@ -27,6 +27,9 @@ export default function Router() {
         { path: ":gnb", element: <AllCategory /> },
       ],
     },
+    {
+      basename: process.env.PUBLIC_URL,
+    },
   ]);
 
   return <RouterProvider router={router} />;
