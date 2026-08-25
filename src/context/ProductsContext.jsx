@@ -7,7 +7,7 @@ export function ProductsProvider({ children }) {
   const [flatProducts, setFlatProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/products.json")
+    fetch(process.env.PUBLIC_URL + "/products.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

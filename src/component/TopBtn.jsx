@@ -24,7 +24,7 @@ export default function TopBtn() {
   return (
     <TopBtnWrap>
       <button className={`topBtn ${show ? "show" : ""}`} onClick={handleTopBtn}>
-        <img src={"/img/top-btn.svg"} alt="topbtn" />
+        <img src={process.env.PUBLIC_URL + "/img/top-btn.svg"} alt="topbtn" />
       </button>
     </TopBtnWrap>
   );

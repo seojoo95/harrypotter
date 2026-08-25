@@ -31,7 +31,7 @@ export default function Intro() {
         animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
         transition={{ duration: 3, delay: 1 }}
       >
-        <img src={"img/Logo.png"} alt="logo" />
+        <img src={process.env.PUBLIC_URL + "img/Logo.png"} alt="logo" />
       </motion.div>
     </IntroContainer>
   );

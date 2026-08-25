@@ -101,7 +101,7 @@ export function ProductsList() {
                       <div className="imgFrameWrap">
                         <img
                           className="imgFrame"
-                          src="/img/frame.svg"
+                          src={process.env.PUBLIC_URL + "/img/frame.svg"}
                           alt="이미지 프레임"
                         />
                         <img
@@ -211,7 +211,7 @@ const CategoryWrap = styled.div`
     }
     .checkInput:checked + .checkBoxLabel {
       .customCheckBox {
-        background-image: url("/img/checked.svg");
+        background-image: url("../../../public/img/checked.svg");
         background-position: center;
         background-size: 12px 12px;
         background-repeat: no-repeat;
